@@ -1,24 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TwoViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XPM-Oo-o7p">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEQ-Hc-2rE">
+                                <rect key="frame" x="16" y="476" width="396" height="400"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYr-dv-hlm">
+                                <rect key="frame" x="16" y="60" width="396" height="400"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="djs-qe-jmr"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="FYr-dv-hlm" firstAttribute="leading" secondItem="djs-qe-jmr" secondAttribute="leading" constant="16" id="2h4-b7-gPX"/>
+                            <constraint firstItem="FYr-dv-hlm" firstAttribute="width" secondItem="zEQ-Hc-2rE" secondAttribute="width" id="2nM-7m-fsm"/>
+                            <constraint firstItem="zEQ-Hc-2rE" firstAttribute="top" secondItem="FYr-dv-hlm" secondAttribute="bottom" constant="16" id="7vS-sL-ndr"/>
+                            <constraint firstItem="djs-qe-jmr" firstAttribute="bottom" secondItem="zEQ-Hc-2rE" secondAttribute="bottom" constant="16" id="V4c-1H-CsG"/>
+                            <constraint firstItem="FYr-dv-hlm" firstAttribute="height" secondItem="zEQ-Hc-2rE" secondAttribute="height" id="VR3-bz-mdd"/>
+                            <constraint firstItem="zEQ-Hc-2rE" firstAttribute="leading" secondItem="djs-qe-jmr" secondAttribute="leading" constant="16" id="aM1-vw-o4O"/>
+                            <constraint firstItem="FYr-dv-hlm" firstAttribute="top" secondItem="djs-qe-jmr" secondAttribute="top" constant="16" id="afJ-9v-Acj"/>
+                            <constraint firstItem="djs-qe-jmr" firstAttribute="trailing" secondItem="zEQ-Hc-2rE" secondAttribute="trailing" constant="16" id="lee-fK-8up"/>
+                            <constraint firstItem="djs-qe-jmr" firstAttribute="trailing" secondItem="FYr-dv-hlm" secondAttribute="trailing" constant="16" id="pdA-8i-Zge"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="44.866071428571423" y="82.608695652173921"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
